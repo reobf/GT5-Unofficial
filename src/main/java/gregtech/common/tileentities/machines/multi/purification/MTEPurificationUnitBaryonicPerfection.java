@@ -252,9 +252,9 @@ public class MTEPurificationUnitBaryonicPerfection
         if (numCasings < MIN_CASINGS) return false;
         // Blacklist stocking bus because it's incredibly buggy with this and keeps duping catalyst no matter how much
         // I try to fix it.
-        for (MTEHatchInputBus bus : validMTEList(mInputBusses)) {
-            if (bus instanceof MTEHatchInputBusME) return false;
-        }
+        //for (MTEHatchInputBus bus : validMTEList(mInputBusses)) {
+        //    if (bus instanceof MTEHatchInputBusME) return false;
+        //}
         return super.checkMachine(aBaseMetaTileEntity, aStack);
     }
 
